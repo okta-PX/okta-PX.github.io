@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mode{
+   
+    display: flex;
+    justify-content: space-around;
+    width: 70px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+}
+
+
+/*mode header kiri */
+#tombol-mode:checked~.container .fa-circle{
+   margin-left: 35px;
+   transition: 300ms;
+   color: whitesmoke;
+}
+#tombol-mode:checked~.container .header-kiri{
+  background-color: #333;
+}
+
+/* mode header kiri selesai */
+
+
+#tombol-mode:checked~.container {
+  background-color: #333;
+}
+
+#tombol-mode:checked~.container .des h1,#tombol-mode:checked~.container .judul h2,#tombol-mode:checked~.container .card h3 {
+color: whitesmoke;
+}
+
+#tombol-mode:checked~.container .des button,
+#tombol-mode:checked~.container .tombol-humberger   {
+background-color: whitesmoke;
+color: #222;
+}
+
+
+#tombol-mode:checked~.container .bg-copy{
+background-color: #222;
+}
+
+/* mode des h1 */
+#tombol-mode:checked~.des h1{
+ color: #222;
+}
+
+
+
+.header-kiri .fa-sun{
+    margin-left: -20px;  
+}
+
+.container .fa-sun, .container .fa-moon{
+    font-size: 25px;
+    color: orange;
+}
+
+.container .fa-circle{
+    position: absolute;
+    font-size: 30px;
+    margin-left: -8px;
+    margin-top: -2px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px #444;
+     transition: 300ms;
+}
+
+.header-kiri{
+   background-color: rebeccapurple;
+    width: 200px;
+    height: 80vh;
+    padding-top: 20vh;
+    box-shadow: 0px 0px 5px #666;
+    margin-left: -200px;
+    transition: 300ms;
+    position: fixed;
+    z-index: 10;
+}
+
+.list-menu li{
+    list-style: none;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    color: #fff;
+    padding-left: 10px;
+}
+.list-menu li:hover{
+    background-color: #fff;
+    color: #222;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+.list-menu a{
+    text-decoration: none;
+}
+
+
+
+/* tombol id area */
+
+input{
+    display: none;
+}
+#tombol:checked~.container .header-kiri{
+  margin-left: 0;
+}
+
+
+#tombol:checked~.container .tombol-humberger{
+ background-color: whitesmoke;
+ color: #666;
+}
+
+.tombol-humberger{
+    font-size: 30px;
+    position: fixed;
+    margin-left: 200px;
+    top: 0;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px #666;
+    cursor: pointer;
+}
+
+
+/* des==================== */
+.des{
+    height: 60vh;
+    width: 50%;
+    margin-bottom: 50px;
+    padding: 10px;
+    margin-top: 10vh;
+}
+
+.des h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: rebeccapurple;
+}
+
+
+.des p{
+    color: #666;
+    line-height: 25px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.bg-des{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.bg-des img{
+    max-height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.des button{
+    background-color: rebeccapurple;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border:  none;
+}
+
+.des button:hover{
+    background-color: #222;
+}
+
+/* des selesai */
+
+
+/* content area================ */
+
+
+.bg-content{
+
+margin-bottom: 100px;
+width: 80%;
+margin: auto;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content img{
+    width: 32%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.content img:hover{
+opacity: 0.7;
+}
+
+.bg-content .judul h2{
+    font-size: 3rem;
+    text-align: start;
+    color: rebeccapurple;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+
+
+/* tentang kami===================== */
+
+.bg-content p{
+    color: #666;
+    line-height: 25px;
+    width: 90%;
+    padding: 20px;
+    font-size: 17px;
+}
+
+
+/* card ==============*/
+
+.card{
+
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.card img{
+    width: 100%;
+    margin: auto;
+}
+.card:hover img{
+   opacity: 0.9;
+}
+.card h3{
+    font-size: 30px;
+    color: rebeccapurple;
+}
+
+.tim-kami{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+/* copy r================== */
+
+.bg-copy{
+    color: whitesmoke;
+    font-size: 16px;
+background-color: rebeccapurple;
+    text-align: center;
+    height: 50px;
+    padding-top: 50px;
+}
+
+.fa-copyright{
+    font-size: 14px;
+}
+
+
+/* animasi scroll=================== */
+/* memberikan trasnsisi dan pergerakan secara horizontal pada class element sekaligus menghilankan elementnya*/
+.elemen {
+  position: relative;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 0.7s ease;
+
+}
+
+
+/* memunculkan kembali elementnya */
+.tampil {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+
+
+
+
+
+@media screen and (max-width:519px){
+    
+    .bg-des{
+    justify-content: center;
+     width: 100%;
+     height: auto;
+     margin-bottom: 40px;
+    }
+    .gambar img{
+        width: 100%;
+        margin: auto;
+   
+    }
+    .des{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+     
+        height: auto;
+        display: block;
+        padding: 0;
+    }
+
+    .des h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+   
+    }
+
+    .bg-des .des p{
+        width: 100%;
+        padding: 0;
+   
+    }
+
+
+ 
+  /* produk */
+
+    
+.bg-content .judul h2{
+    margin-top: 0;
+    font-size: 35px;
+  
+}
+    .bg-content{
+      
+        width: 90%;
+    }
+
+  
+    .content img{
+        width: 100%;
+    }
+
+
+
+   
+}
+
+
+
+
+@media screen and (min-width:520px) and (max-width:920px){
+    .des{
+    justify-content: center;
+     width: 100%;
+     height: auto;
+     margin-bottom: 40px;
+    }
+    .gambar img{
+        width: 100%;
+        margin: auto;
+   
+    }
+    .des{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+     
+        height: auto;
+        display: block;
+        padding: 0;
+    }
+
+    .des h1{
+     
+        margin-bottom: 10px;
+   
+    }
+
+    .bg-des .des p{
+        width: 100%;
+        padding: 0;
+   
+    }
+
+
+
+    .content img{
+        width: 45%;
+    }
+
+
+    .bg-content .judul h2{
+    margin-top: 0;
+    font-size: 35px;
+  
+}
+
+
+
+}
